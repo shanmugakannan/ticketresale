@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ticket Resale</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="/controllers/app.js"></script>
+</head>
+<body  ng-controller="MainController as main">
+ <h1>{{main.title}}</h1>
+<input type="text"  ng-model="main.input1">
+<input type="text"  ng-model="main.input2">
+{{main.input1*1 + main.input2*1  }}
+<ul>
+        <li ng-repeat="prod in main.products">{{prod.name}}</li>
+</ul>
+</body>
+</html>
