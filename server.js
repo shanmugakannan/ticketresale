@@ -13,7 +13,7 @@ var port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public/modules/ticket/')); 
 
 // routes ==================================================
-require('./app/routes')(app); // configure our routes
+require('./app/routes/ticket.server.routes')(app); // configure our routes
 
 // start app ===============================================
 app.listen(port);               
