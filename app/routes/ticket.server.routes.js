@@ -6,7 +6,7 @@
 
         // server routes ===========================================================		
 		app.get('/ticket/get', function(req, res) {
-            // use mongoose to get all nerds in the database
+            // use mongoose to get all tickets in the database
             ticket.find(function(err, tickets) {
                 if (err)
                     res.send('error');
