@@ -24,7 +24,7 @@ require('./app/routes/ticket.server.routes')(app); // configure our routes
 app.listen(port);               
 
 // Console.log                  
-console.log('Express runs on ' + port);
+console.log('Ticketresale runs on ' + port);
 
 // expose app           
 exports = module.exports = app;
