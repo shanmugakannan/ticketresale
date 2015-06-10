@@ -19,7 +19,7 @@ var port = process.env.PORT || 8080;
 
 //Connect to database
 mongoose.connect(db.url);
-log.info("Connected to MongoDB")
+log.info("Connected to MongoDB");
 
 // set the static files location /public/img will be /img 
 app.use(express.static(__dirname + '/public/modules/ticket/')); 
@@ -32,6 +32,6 @@ app.listen(port);
 
 // Console.log                  
 console.log('Ticket Resale runs on ' + port);
-log.info("Ticket Resale runs on " + port")
+log.info('Ticket Resale runs on ' + port");
 // expose app           
 exports = module.exports = app;
