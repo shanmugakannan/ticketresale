@@ -2,7 +2,8 @@
       "name": "ticket",
       "main": "server.js",
       "dependencies": {
-        "express" : "~4.11.2"       
+        "express" : "~4.11.2",
+        "mongoose":"latest"
       },
 	  "repository": {
   "type": "git",
