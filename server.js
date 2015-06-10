@@ -1,9 +1,7 @@
-// server.js
-
 // modules =================================================
 var express        = require('express');
 var app            = express();
-var mongoose = require('mongoose');    
+var mongoose = require('mongoose');
 
 // configuration ===========================================
 var db = require('./app/config/db');
@@ -24,7 +22,7 @@ require('./app/routes/ticket.server.routes')(app); // configure our routes
 app.listen(port);               
 
 // Console.log                  
-console.log('Ticketresale runs on ' + port);
+console.log('Ticket Resale runs on ' + port);
 
 // expose app           
 exports = module.exports = app;
