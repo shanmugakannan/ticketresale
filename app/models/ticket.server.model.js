@@ -2,8 +2,6 @@ var mongoose = require('mongoose');
 
  
 var TicketSchema = mongoose.Schema({
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "ticketschema",
   "type": "object",
   "properties": {
     "cinema": {
@@ -29,4 +27,4 @@ var TicketSchema = mongoose.Schema({
  
 
 var tickets = mongoose.model('model', TicketSchema,'tickets');
-module.exports = ticket;
+module.exports = tickets;
