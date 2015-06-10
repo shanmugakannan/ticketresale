@@ -3,7 +3,8 @@
       "main": "server.js",
       "dependencies": {
         "express" : "~4.11.2",
-        "mongoose":"latest"
+        "mongoose":"latest",
+        "node-logentries": "0.0.2"
       },
 	  "repository": {
   "type": "git",
