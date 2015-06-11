@@ -33,7 +33,7 @@
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/form/ticket');
+    $urlRouterProvider.otherwise('/');
 })
 
 // our controller for the form
