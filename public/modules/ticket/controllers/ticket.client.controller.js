@@ -15,19 +15,19 @@
   
         //  /tickets/choose 
         .state('ticket.choose', {
-            url: '/choose',
+            url: './choose',
             templateUrl: './views/form-choose.html'
         })
         
         // url will be /form/interests
         .state('ticket.confirm', {
-            url: '/confirm',
+            url: './confirm',
             templateUrl: './views/form-confirm.html'
         })
         
         // url will be /form/payment
         .state('ticket.payment', {
-            url: '/payment',
+            url: './payment',
             templateUrl: './views/form-payment.html'
         });
        
