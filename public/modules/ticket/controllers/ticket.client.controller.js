@@ -1,14 +1,6 @@
 (function() {
   var app = angular.module("app", ['ngAnimate', 'ui.router']);
 
-  app.controller('TicketController', function(){
-    this.products = [{name:'ticket1'},{name:'ticket2'}];
-    this.title = "ticket";
-    this.input1 = "1"; 
-    this.input2 = "2";
-  });
-  
-  
   app.config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider
@@ -47,6 +39,11 @@
 // our controller for the form
 // =============================================================================
 app.controller('formController', function($scope) {
+    //dummy
+    $scope.products = [{name:'ticket1'},{name:'ticket2'}];
+    $scope.title = "ticket";
+    $scope.input1 = "1"; 
+    $scope.input2 = "2";
     
     // we will store all of our form data in this object
     $scope.formData = {};
