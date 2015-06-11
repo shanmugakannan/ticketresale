@@ -13,13 +13,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
     <script src="/controllers/ticket.client.controller.js"></script>
 </head>
-<body  ng-app='app'  ng-controller="formController as main">
- <h1>{{main.title}}</h1>
+<body  ng-app='app'  ng-controller="formController">
+ <h1>{{$scope.title}}</h1>
 <input type="text"  ng-model="main.input1">
 <input type="text"  ng-model="main.input2">
-{{main.input1*1 + main.input2*1  }}
+{{$scope.input1*1 + $scope.input2*1  }}
 <ul>
-        <li ng-repeat="prod in main.products">{{prod.name}}</li>
+        <li ng-repeat="prod in main.products">{{$scope.name}}</li>
 </ul>
 <!-- views will be injected here -->
 <div class="container">
