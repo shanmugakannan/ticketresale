@@ -16,7 +16,7 @@
         //  /formcontainer 
         .state('ticket', {
             url: '/ticket',
-            templateUrl: './public/modules/ticket/views/formcontainer.html',
+            templateUrl: './views/formcontainer.html',
             controller: 'formController'
         })
         
@@ -24,19 +24,19 @@
         //  /tickets/choose 
         .state('ticket.choose', {
             url: '/choose',
-            templateUrl: 'form-choose.html'
+            templateUrl: './views/form-choose.html'
         })
         
         // url will be /form/interests
         .state('ticket.confirm', {
             url: '/confirm',
-            templateUrl: 'form-confirm.html'
+            templateUrl: './views/form-confirm.html'
         })
         
         // url will be /form/payment
         .state('ticket.payment', {
             url: '/payment',
-            templateUrl: 'form-payment.html'
+            templateUrl: './views/form-payment.html'
         });
        
     // catch all route
