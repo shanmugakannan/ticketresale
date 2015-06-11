@@ -38,7 +38,7 @@
 
 // our controller for the form
 // =============================================================================
-app.controller('formController', function($scope) {
+app.controller('formController', ['$scope',function($scope) {
     //dummy
     $scope.products = [{name:'ticket1'},{name:'ticket2'}];
     $scope.title = "ticket";
@@ -46,14 +46,14 @@ app.controller('formController', function($scope) {
     $scope.input2 = "2";
     
     // we will store all of our form data in this object
-    //$scope.formData = {};
+    $scope.formData = {};
     
     // function to process the form
     $scope.processForm = function() {
         alert('awesome!');  
     };
     
-});
+}]);
 
   
   
