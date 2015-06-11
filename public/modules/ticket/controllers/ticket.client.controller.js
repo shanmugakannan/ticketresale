@@ -7,7 +7,7 @@
     
         //  /formcontainer 
         .state('ticket', {
-            url: '/ticket',
+            url: '/',
             templateUrl: './views/formcontainer.html',
             controller: 'formController'
         })
