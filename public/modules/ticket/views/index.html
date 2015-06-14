@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <title>Ticket Resale</title>
      <!-- CSS -->
-     
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
     
     <!-- JS -->
     <!-- load angular, nganimate, and ui-router -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
     <script src="/controllers/ticket.client.controller.js"></script>
 </head>
-<body  ng-app='app'  ng-controller="formController">
- <h1>{{$scope.title}}</h1>
-<input type="text"  ng-model="main.input1">
-<input type="text"  ng-model="main.input2">
-{{$scope.input1*1 + $scope.input2*1  }}
-<ul>
-        <li ng-repeat="prod in main.products">{{$scope.name}}</li>
-</ul>
+<body  ng-app='app'  ng-controller="ticketController">
+
+<header>
+<h1>Ticket</h1>
+</header>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i> Tickets</a></li>
+        <li><a href="#confirm"><i class="fa fa-shield"></i> Confirm</a></li>
+        <li><a href="#pay"><i class="fa fa-comment"></i> Pay</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<section>
 <!-- views will be injected here -->
 <div class="container">
-    <div ui-view></div>
+    <div ng-view></div>
 </div>
+</section>
+
+<footer>
+Copyright © Tickets 2015
+</footer>
+
 </body>
 </html>

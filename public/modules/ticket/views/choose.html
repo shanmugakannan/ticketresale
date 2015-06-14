@@ -1,0 +1,16 @@
+<h2>{{message}}</h2>
+<div class="jumbotron text-left">
+	 <div ng-click='bookTicket'>Bahubali</div>
+	 <div>Scary Movie</div>
+	 <div>Lemon Rice</div>
+</div>
+<div>
+No of Tickets
+<input type="text"  ng-model="count"> </BR>
+Book {{count}} tickets
+<ul>
+        <li ng-repeat="prod in products">{{$scope.name}}</li>
+</ul>
+
+</div>
+
