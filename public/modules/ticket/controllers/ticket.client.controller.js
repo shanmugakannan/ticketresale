@@ -20,6 +20,7 @@
 				templateUrl : '../views/pay.html',
 				controller  : 'paymentController'
 			});
+			
 	});
 	
  
@@ -27,8 +28,8 @@
 app.controller('ticketController', function($scope) {
 	    $scope.message = 'Select your movie';
 		$scope.count='1';
-		$scope.booktTicket = function() {
-        $scope.count='11';
+		$scope.bookTicket = function() {
+        $scope.selectedMovie='Bahubali';
 		}
 	});
 	
