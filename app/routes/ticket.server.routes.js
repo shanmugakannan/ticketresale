@@ -10,10 +10,10 @@
             ticket.find(function(err, tickets) {
                 if (err)
                     res.send('error');
-
                 res.json(tickets); // return all tickets 
             });
-        });
+        }); 
+		
 		
         // route to handle authentication routes goes here
         // route to handle creating goes here (app.post)
