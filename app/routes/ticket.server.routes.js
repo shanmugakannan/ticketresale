@@ -4,15 +4,19 @@
 	
     module.exports = function(app) {
 
-        // server routes ===========================================================		
-		app.get('/ticket/get', function(req, res) {
+         // server routes ===========================================================		
+		/* app.get('/ticket/get', function(req, res) {
             // use mongoose to get all tickets in the database
             ticket.find(function(err, tickets) {
                 if (err)
                     res.send('error');
-
                 res.json(tickets); // return all tickets 
             });
+        }); */
+		
+		app.get('/ticket/get', function(req, res) {
+            // use mongoose to get all tickets in the database
+            res.send('ticket:json');
         });
 		
         // route to handle authentication routes goes here
