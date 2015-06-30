@@ -1,4 +1,9 @@
 <h2>{{message}}</h2>
+
+<ul ng-repeat="ticket in tickets">
+	<li ng-repeat="ticket in tickets">{{ticket.movie}}</li>
+</ul>
+
 <div class="jumbotron text-left">
 	 <div ng-click='bookTicket()'>Bahubali</div>
 	 <div>Scary Movie</div>
@@ -10,9 +15,6 @@ No of Tickets
 Movie : {{selectedMovie}} </BR>
 <a ng-href='#' ng-click='bookTicket()' >click me</a>
 Book {{count}} tickets
-<ul>
-        <li ng-repeat="prod in products">{{$scope.name}}</li>
-</ul>
 
 </div>
 

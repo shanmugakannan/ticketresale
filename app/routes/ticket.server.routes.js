@@ -1,9 +1,6 @@
-
-
     var ticket = require('../models/ticket.server.model');
 	
     module.exports = function(app) {
-
         // server routes ===========================================================		
 		app.get('/ticket/get', function(req, res) {
             // use mongoose to get all tickets in the database

@@ -1,5 +1,7 @@
 (function() {
-  var app = angular.module("app", ['ngAnimate', 'ngRoute']);
+  var app = angular.module("app", ['ngRoute']);
+
+  
 
   app.config(function($routeProvider) {
 		$routeProvider
@@ -11,7 +13,7 @@
 
 			// route for the ticket details page
 			.when('/confirm', {
-				templateUrl : './views/confirm.html',
+				templateUrl : '../views/confirm.html',
 				controller  : 'detailsController'
 			})
 
@@ -23,10 +25,10 @@
 			
 	});
 	
- 
 
-app.controller('ticketController', function($scope) {
+app.controller('ticketController', function($scope,ticketRepository) {
 	    $scope.message = 'Select your movie';
+		ticketRepository.get();
 		$scope.count='1';
 		$scope.bookTicket = function() {
         $scope.selectedMovie='Bahubali';
