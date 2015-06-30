@@ -28,7 +28,7 @@
 
 app.controller('ticketController', function($scope,ticketRepository) {
 	    $scope.message = 'Select your movie';
-		ticketRepository.get();
+		$scope.tickets = ticketRepository.tickets;
 		$scope.count='1';
 		$scope.bookTicket = function() {
         $scope.selectedMovie='Bahubali';

@@ -1,16 +1,16 @@
-angular.module("app").factory('ticketRepository', ['$http',function($http,$scope) {
-    return {
-        get : function() {
-$scope={}
-			$http.get('/ticket/get').
+angular.module("app").factory('ticketRepository', ['$http',function($http) {
+    var tickets = [];
+	$http.get('/ticket/get').
 			success(function(data) {
-				$scope.tickets = data;
-				$scope.message = 'asdasd';
+		    data.forEach(function (ticket) {
+            tickets.push(ticket);
+        });
 			}).
 		error(function(err) {
-				$scope.tickets = err;
-				$scope.message = 'err';
+				 
 		});
-        }
-    }       
+	
+	return {
+        tickets: tickets
+    };      
 }]);
